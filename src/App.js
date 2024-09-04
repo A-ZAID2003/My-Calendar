@@ -1,12 +1,11 @@
+// App.js
+
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import CalendarPage from './pages/CalendarPage';
-// import EventDetailsPage from './pages/EventDetailsPage';
 import Header from './components/Header';
 import { CalendarProvider } from './context/CalendarContext';
 import CalendarPage from './pages/CalendarPage';
-import EventDetailsPage from './pages/EventDetailsPage'; // Ensure this file exists if used
-// import { CalendarProvider } from './context/CalendarContext';
+import EventDetailsPage from './pages/EventDetailsPage';
 
 const App = () => (
   <CalendarProvider>

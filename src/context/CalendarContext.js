@@ -1,9 +1,11 @@
+// context/CalendarContext.js
+
 import React, { createContext, useState } from 'react';
 
 export const CalendarContext = createContext();
 
 export const CalendarProvider = ({ children }) => {
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState([]);  // State to store events
 
   const addEvent = (event) => setEvents([...events, event]);
   const editEvent = (updatedEvent) => {
